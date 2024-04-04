@@ -37,8 +37,7 @@ impl App for DeathrollGame {
                     ui.vertical_centered_justified(|ui| {
                         ui.heading("Deathroll Game");
                         ui.label("Enter starting value and click the button to start the game.");
-                        let number_input = ui.text_edit_singleline(&mut self.current_roll_input);
-
+                        ui.text_edit_singleline(&mut self.current_roll_input);
                         self.current_roll = self.current_roll_input.parse::<i64>().unwrap_or_else(|_e| { -1 });
                         if self.current_roll <= 0 {
                             ui.label("Invalid input. Please enter a valid number.");
