@@ -1,0 +1,9 @@
+[package]
+name = "DeathRollGame"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+eframe = "*"
+egui = "*"
+rand = "0.8.5"
